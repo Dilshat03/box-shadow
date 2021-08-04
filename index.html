@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1 class="box-title">Box-shadow generator</h1>
+<div class="flex-wrap grid">
+    <div class="flex">
+        <label for="r1" class="str">Block shape:</label>
+        <h6 class="r1-count str"></h6>
+        <input type="range" id="r1" value="0" max="50" class="polzunok">
+
+        <label for="offsetX" class="str">Shift right:</label>
+        <h6 class="offsetX-count str"></h6>
+        <input type="range" id="offsetX" class="polzunok" value="0" min="-100">
+
+        <label for="offsetY" class="str">Shift down:</label>
+        <h6 class="offsetY-count str"></h6>
+        <input type="range" id="offsetY" class="polzunok" value="0" min="-100">
+
+        <label for="blur" class="str">Blur:</label>
+        <h6 class="blur-count str"></h6>
+        <input type="range" id="blur" class="polzunok" value="0" min="-100">
+
+        <label for="spread" class="str">Spread:</label>
+        <h6 class="spread-count str"></h6>
+        <input type="range" id="spread" class="polzunok" value="0" min="-100">
+
+        <label for="color" class="color-label">Shadow-color</label>
+        <input type="color" id="color">
+
+        <div class="color-div">
+            <label for="box-color" class="color-label">Box-color</label>
+            <input type="color" id="box-color">
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="inset" checked>
+            <label class="form-check-label" for="inset">Inset</label>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <div class="box"></div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

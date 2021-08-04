@@ -1,0 +1,73 @@
+label{
+    font-family: "Josefin Sans",sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+body{
+    background: linear-gradient(to bottom, #33ccff 0%, #66ff33 100%);
+    height: 100vh;
+}
+.result {
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+}
+
+.polzunok {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #ff3399 0%, #cc33ff 100%);
+    border: solid 1px #82CFD0;
+    border-radius: 12px;
+    width: 100%;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+}
+
+.flex {
+    width: 30%;
+    margin-right: 200px;
+    border: 2px solid dodgerblue;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.flex-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-title{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.color-div{
+    display: flex;
+}
+.color-label{
+    margin-right: 20px;
+    line-height: 1.5;
+}
+.result{
+    border-radius: 15px;
+    border: 2px solid dodgerblue;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.str{
+    display: inline-block;
+}
+
